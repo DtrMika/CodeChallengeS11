@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label for="nameInput">Nombre: </label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Escriba sus nombres">
+        </div>
+        <div class="form-group">
+            <label for="lastNameInput">Apellido: </label>
+            <input type="text" class="form-control" id="lastNameInput" placeholder="Escriba sus apellidos">
+        </div>
+        <div>
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            <br><br>
+            <input type="submit" value="Enviar" id="Enviar">
+        </div>
+    </form>
+    <h2>Respuesta del servidor</h2>
+    <pre id="serverResponse"></pre>
+    <script src="script.js"></script>
+</body>
+
+</html>
